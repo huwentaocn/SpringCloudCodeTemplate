@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: system-module # 服务名
-  profiles:
-    active: dev # 环境设置
