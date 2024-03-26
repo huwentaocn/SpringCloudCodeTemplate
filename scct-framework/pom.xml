@@ -10,6 +10,7 @@
 
     <packaging>pom</packaging>
     <artifactId>scct-framework</artifactId>
+    <version>${revision}</version>
 
     <modules>
         <module>scct-common</module>

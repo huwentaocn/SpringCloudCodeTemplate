@@ -1,8 +1,8 @@
 package com.wx.idempotent.aop;
 
-import com.wx.common.exception.GlobalException;
-import com.wx.common.result.ResultCodeEnum;
-import com.wx.common.util.CollectionUtils;
+import com.hwt.common.exception.GlobalException;
+import com.hwt.common.result.ResultCodeEnum;
+import com.hwt.common.util.CollectionUtils;
 import com.wx.idempotent.annotation.Idempotent;
 import com.wx.idempotent.redis.IdempotentRedisDAO;
 import com.wx.idempotent.service.IdempotentKeyResolver;

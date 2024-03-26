@@ -10,6 +10,8 @@
 	<packaging>jar</packaging>
 
 	<artifactId>scct-common</artifactId>
+	<version>${revision}</version>
+
 	<name>${project.artifactId}</name>
 	<description>
 		定义基础 pojo 类、枚举、工具类等等
@@ -45,6 +47,17 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<scope>provided</scope> <!-- 设置为 provided，只有工具类需要使用到 -->
 		</dependency>
 	</dependencies>
 

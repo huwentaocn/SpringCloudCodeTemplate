@@ -1,0 +1,25 @@
+server:
+  port: 6000
+
+spring:
+  main:
+    web-application-type: reactive #指定应用程序的 Web 应用程序类型为响应式
+    allow-bean-definition-overriding: true #允许在应用程序上下文中覆盖相同名称的 Bean 定义
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true # gateway可以发现nacos中的微服务，并自动生成转发路由
+      routes:
+        - id: scct-base-server
+          uri: lb://scct-base-server
+          predicates:
+            - Path=/base/**
+      globals:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+            allowCredentials: false
+

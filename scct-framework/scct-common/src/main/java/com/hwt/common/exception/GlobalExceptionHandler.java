@@ -1,8 +1,7 @@
 package com.hwt.common.exception;
 
-
-import com.wx.common.result.Result;
-import com.wx.common.result.ResultCodeEnum;
+import com.hwt.common.result.Result;
+import com.hwt.common.result.ResultCodeEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.BindingResult;
