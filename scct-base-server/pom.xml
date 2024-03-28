@@ -40,16 +40,23 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
 
-        <!-- 依赖服务 -->
+        <!-- 依赖业务服务 -->
+        <!--公共服务-->
         <dependency>
             <groupId>com.hwt.cloud</groupId>
             <artifactId>scct-common</artifactId>
         </dependency>
 
+        <!--mybatisPlus-->
+        <dependency>
+            <groupId>com.hwt.cloud</groupId>
+            <artifactId>scct-mybatis-plus</artifactId>
+        </dependency>
+
         <!-- Web 相关 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.hwt.cloud</groupId>
+            <artifactId>scct-web</artifactId>
         </dependency>
 
     </dependencies>

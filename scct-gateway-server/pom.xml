@@ -21,6 +21,12 @@
 			<artifactId>spring-cloud-starter-bootstrap</artifactId>
 		</dependency>
 
+		<!-- RPC 远程调用相关 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-loadbalancer</artifactId>
+		</dependency>
+
 		<!-- Gateway 网关相关 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -32,10 +38,9 @@
 			<artifactId>javax.servlet-api</artifactId>
 		</dependency>
 
-		<!-- RPC 远程调用相关 -->
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-loadbalancer</artifactId>
+			<groupId>com.github.xiaoymin</groupId> <!-- 接口文档 -->
+			<artifactId>knife4j-gateway-spring-boot-starter</artifactId>
 		</dependency>
 
 		<!-- Registry 注册中心相关 -->

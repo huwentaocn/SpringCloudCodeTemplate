@@ -16,6 +16,7 @@
         <module>scct-common</module>
         <module>scct-idempotent</module>
         <module>scct-mybatis-plus</module>
+        <module>scct-web</module>
     </modules>
 
     <name>${project.artifactId}</name>

@@ -21,7 +21,6 @@ import java.util.List;
  * @Date 2023/11/13 9:27 星期一
  * @Author Hu Wentao
  */
-@UtilityClass
 @Slf4j
 public class JsonUtils {
 

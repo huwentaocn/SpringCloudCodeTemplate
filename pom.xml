@@ -141,6 +141,11 @@
                 <artifactId>scct-idempotent</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <dependency>
+                <groupId>com.hwt.cloud</groupId>
+                <artifactId>scct-web</artifactId>
+                <version>${revision}</version>
+            </dependency>
 
             <!-- Spring 核心 -->
             <dependency>
