@@ -1,8 +1,8 @@
-package com.wx.idempotent.service.impl;
+package com.hwt.idempotent.service.impl;
 
 import cn.hutool.core.util.ArrayUtil;
-import com.wx.idempotent.annotation.Idempotent;
-import com.wx.idempotent.service.IdempotentKeyResolver;
+import com.hwt.idempotent.annotation.Idempotent;
+import com.hwt.idempotent.service.IdempotentKeyResolver;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.core.LocalVariableTableParameterNameDiscoverer;

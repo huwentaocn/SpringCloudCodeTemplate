@@ -1,7 +1,7 @@
-package com.wx.idempotent.annotation;
+package com.hwt.idempotent.annotation;
 
-import com.wx.idempotent.service.IdempotentKeyResolver;
-import com.wx.idempotent.service.impl.DefaultIdempotentKeyResolver;
+import com.hwt.idempotent.service.IdempotentKeyResolver;
+import com.hwt.idempotent.service.impl.DefaultIdempotentKeyResolver;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

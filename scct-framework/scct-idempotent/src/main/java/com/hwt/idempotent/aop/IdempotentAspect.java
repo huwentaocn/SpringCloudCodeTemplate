@@ -1,11 +1,11 @@
-package com.wx.idempotent.aop;
+package com.hwt.idempotent.aop;
 
 import com.hwt.common.exception.GlobalException;
 import com.hwt.common.result.ResultCodeEnum;
 import com.hwt.common.util.CollectionUtils;
-import com.wx.idempotent.annotation.Idempotent;
-import com.wx.idempotent.redis.IdempotentRedisDAO;
-import com.wx.idempotent.service.IdempotentKeyResolver;
+import com.hwt.idempotent.redis.IdempotentRedisDAO;
+import com.hwt.idempotent.annotation.Idempotent;
+import com.hwt.idempotent.service.IdempotentKeyResolver;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;

@@ -1,4 +1,4 @@
-package com.wx.idempotent.redis;
+package com.hwt.idempotent.redis;
 
 import lombok.AllArgsConstructor;
 import org.springframework.data.redis.core.StringRedisTemplate;

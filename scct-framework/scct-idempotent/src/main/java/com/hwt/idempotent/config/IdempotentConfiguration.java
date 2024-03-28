@@ -1,10 +1,10 @@
-package com.wx.idempotent.config;
+package com.hwt.idempotent.config;
 
-import com.wx.idempotent.aop.IdempotentAspect;
-import com.wx.idempotent.redis.IdempotentRedisDAO;
-import com.wx.idempotent.service.IdempotentKeyResolver;
-import com.wx.idempotent.service.impl.DefaultIdempotentKeyResolver;
-import com.wx.idempotent.service.impl.ExpressionIdempotentKeyResolver;
+import com.hwt.idempotent.aop.IdempotentAspect;
+import com.hwt.idempotent.redis.IdempotentRedisDAO;
+import com.hwt.idempotent.service.IdempotentKeyResolver;
+import com.hwt.idempotent.service.impl.DefaultIdempotentKeyResolver;
+import com.hwt.idempotent.service.impl.ExpressionIdempotentKeyResolver;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.core.StringRedisTemplate;

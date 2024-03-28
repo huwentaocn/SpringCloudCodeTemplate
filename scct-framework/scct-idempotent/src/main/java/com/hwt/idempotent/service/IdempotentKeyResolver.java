@@ -1,6 +1,6 @@
-package com.wx.idempotent.service;
+package com.hwt.idempotent.service;
 
-import com.wx.idempotent.annotation.Idempotent;
+import com.hwt.idempotent.annotation.Idempotent;
 import org.aspectj.lang.JoinPoint;
 
 /**

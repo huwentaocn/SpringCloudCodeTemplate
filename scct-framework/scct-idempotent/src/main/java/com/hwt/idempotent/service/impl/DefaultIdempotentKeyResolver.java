@@ -1,9 +1,9 @@
-package com.wx.idempotent.service.impl;
+package com.hwt.idempotent.service.impl;
 
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.SecureUtil;
-import com.wx.idempotent.annotation.Idempotent;
-import com.wx.idempotent.service.IdempotentKeyResolver;
+import com.hwt.idempotent.annotation.Idempotent;
+import com.hwt.idempotent.service.IdempotentKeyResolver;
 import org.aspectj.lang.JoinPoint;
 
 /**
