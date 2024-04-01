@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 
 /**
- * @author : wx
+ * @author : Hu wentao
  * date : 2022-05-14 09:54
  * description : 全局返回结构
  */
@@ -22,7 +22,7 @@ public class Result<T> implements Serializable {
     /**
      * 响应码
      */
-    private int code;
+    public int code;
 
     /**
      * 响应信息
@@ -99,6 +99,10 @@ public class Result<T> implements Serializable {
         return new Result<>(code,msg,null);
     }
 
+    public static<T> Result<T> fail(ResultCodeEnum codeEnum, String errorMessage){
+        return new Result<>(codeEnum.getCode(), codeEnum.getMessage() + "==>" + errorMessage, null);
+    }
+
 
     /**
      * 失败（内部调用）
@@ -115,26 +119,5 @@ public class Result<T> implements Serializable {
         this.msg = msg;
         this.data = data;
     }
-
-
-    /**
-     * 失败，默认状态码,默认响应信息
-     * 无权限
-     * @param <T> 返回类泛型
-     */
-    public static <T> Result<T> forbidden(){
-        return new Result<>(ResultCodeEnum.FORBIDDEN_FAIL.code,ResultCodeEnum.FORBIDDEN_FAIL.message,null);
-    }
-
-
-    /**
-     * 失败，默认状态码
-     * 无权限
-     * @param <T> 返回类泛型
-     */
-    public static <T> Result<T> forbidden(String msg){
-        return new Result<>(ResultCodeEnum.FORBIDDEN_FAIL.code,msg,null);
-    }
-
 
 }

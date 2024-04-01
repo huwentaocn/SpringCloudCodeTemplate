@@ -16,6 +16,32 @@
     </description>
 
     <dependencies>
+        <!-- 依赖业务服务 -->
+        <!--公共服务-->
+        <dependency>
+            <groupId>com.hwt.cloud</groupId>
+            <artifactId>scct-common</artifactId>
+        </dependency>
+
+        <!--mybatisPlus-->
+        <dependency>
+            <groupId>com.hwt.cloud</groupId>
+            <artifactId>scct-mybatis-plus</artifactId>
+        </dependency>
+
+        <!-- Web 相关 -->
+        <dependency>
+            <groupId>com.hwt.cloud</groupId>
+            <artifactId>scct-web</artifactId>
+        </dependency>
+
+        <!-- Redis 相关-->
+        <dependency>
+            <groupId>com.hwt.cloud</groupId>
+            <artifactId>scct-redis</artifactId>
+        </dependency>
+
+
         <!-- Spring Cloud 基础 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -40,23 +66,18 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
 
-        <!-- 依赖业务服务 -->
-        <!--公共服务-->
+        <!--阿里云短信sdk-->
         <dependency>
-            <groupId>com.hwt.cloud</groupId>
-            <artifactId>scct-common</artifactId>
+            <groupId>com.aliyun</groupId>
+            <artifactId>alibabacloud-dysmsapi20170525</artifactId>
+            <version>${alibabacloud-dysmsapi20170525.version}</version>
         </dependency>
 
-        <!--mybatisPlus-->
+        <!-- 阿里云oss依赖 -->
         <dependency>
-            <groupId>com.hwt.cloud</groupId>
-            <artifactId>scct-mybatis-plus</artifactId>
-        </dependency>
-
-        <!-- Web 相关 -->
-        <dependency>
-            <groupId>com.hwt.cloud</groupId>
-            <artifactId>scct-web</artifactId>
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
+            <version>${aliyun-sdk-oss.version}</version>
         </dependency>
 
     </dependencies>

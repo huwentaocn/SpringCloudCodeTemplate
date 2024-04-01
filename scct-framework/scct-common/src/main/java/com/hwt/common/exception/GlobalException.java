@@ -12,10 +12,9 @@ import lombok.experimental.Accessors;
 
 
 /**
- * author : wx
- * date : 2022-03-02 15:35
- * description : 自定义全局异常实体
- * @author lh
+ * @Description 自定义全局异常实体
+ * @Date 2023/8/31 14:02 星期四
+ * @Author Hu Wentao
  */
 @Data
 @Accessors(chain = true)

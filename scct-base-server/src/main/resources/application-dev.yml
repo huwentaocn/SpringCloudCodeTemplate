@@ -1,9 +1,12 @@
 server:
-  port: 6001
+  port: 9001
   encoding:
     charset: UTF-8
     enabled: true
     force: true
+  servlet:
+    context-path: /base
+
 
 
 spring:
@@ -40,18 +43,29 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 查看日志
 
+#阿里云配置
+aliyun:
+  sms: #短信配置
+    region-id: cn-beijing
+    key-id: #阿里keyId
+    key-secret: #阿里secret
+    sign-name: #签名名称
+    template-code-1: SMS_205439915 #一分钟有效短信模板
+    template-code-2: SMS_162630265 #两分钟有效短信模板
+    template-code-5: SMS_256970971 #五分钟有效短信模板
+  oss: #oss配置
+    endpoint: oss-cn-beijing.aliyuncs.com
+    keyId: #阿里keyId
+    keySecret: #阿里secret
+    bucketName: wxmanage
+    urlPrefix: https://${aliyun.oss.bucketName}.${aliyun.oss.endpoint}
+
 --- #################### 接口文档配置 ####################
 
-springdoc:
-  api-docs:
-    enabled: true # 1. 是否开启 Swagger 接文档的元数据
-    path: /v3/api-docs
-  swagger-ui:
-    enabled: true # 2.1 是否开启 Swagger 文档的官方 UI 界面
-    path: /swagger-ui.html
-  default-flat-param-object: true # 参见 https://doc.xiaominfo.com/docs/faq/v4/knife4j-parameterobject-flat-param 文档
-
 knife4j:
-  enable: true # 2.2 是否开启 Swagger 文档的 Knife4j UI 界面
-  setting:
-    language: zh_cn
+  enable: true
+
+# 设置日志级别
+logging:
+  level:
+    root: info

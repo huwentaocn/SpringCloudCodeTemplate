@@ -5,7 +5,6 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.generator.FastAutoGenerator;
 import com.baomidou.mybatisplus.generator.config.OutputFile;
 import com.baomidou.mybatisplus.generator.config.rules.DbColumnType;
-import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import com.baomidou.mybatisplus.generator.fill.Property;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
@@ -58,7 +57,7 @@ public class CodeGeneratorNew {
                 }))
                 //包配置
                 .packageConfig(builder -> {
-                    builder.parent("com.hwt.cloud") // 设置父包名
+                    builder.parent("com.hwt.base") // 设置父包名
 //                            .moduleName("wx-digital-lab") // 设置父包模块名
                             .entity("pojo.entity") //设置entity包名
                             .service("service")
@@ -73,7 +72,7 @@ public class CodeGeneratorNew {
                 .strategyConfig(builder -> {
                     builder
                             //entity配置策略
-                            .addInclude("wx_project")
+//                            .addInclude("wx_project")
                             .entityBuilder()
                             .enableLombok()
                             .idType(IdType.ASSIGN_ID) //id策略，雪花算法
@@ -108,7 +107,7 @@ public class CodeGeneratorNew {
                     ;
 
                 })
-                .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
+//                .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
                 .execute();
     }
 

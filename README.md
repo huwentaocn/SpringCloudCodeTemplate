@@ -2,7 +2,8 @@
 SpringCloud代码模板
 
 技术栈：
-    SpringBoot + SpringCloud + SpringCloudAlibaba + Nacos + MybatisPlus + Redis + Mysql + Swagger
+    SpringBoot + SpringCloud + SpringCloudAlibaba + Nacos + Gateway + MybatisPlus + Redis + Mysql + Swagger
+    + logback + Oss + Sms 
 
 版本:
     SpringBoot: 2.7.16
@@ -15,6 +16,12 @@ SpringCloud代码模板
     防重复提交
     Swagger 
     一键改包
+    网关
+    统一日志
+    阿里oss文件上传
+    阿里短信
+    
+
 
 
     

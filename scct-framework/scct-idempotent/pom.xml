@@ -22,11 +22,9 @@
             <groupId>com.hwt.cloud</groupId>
             <artifactId>scct-common</artifactId>
         </dependency>
-
-        <!-- spring boot redis缓存引入 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <groupId>com.hwt.cloud</groupId>
+            <artifactId>scct-redis</artifactId>
         </dependency>
 
         <!-- 服务保障相关 -->

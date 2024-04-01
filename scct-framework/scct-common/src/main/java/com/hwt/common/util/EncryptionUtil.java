@@ -285,6 +285,16 @@ public class EncryptionUtil {
     }
 
     /**
+     * 比对MD5
+     * @param plainText 明文
+     * @param md5Text md5密文
+     * @return
+     */
+    public static boolean matchesMD5(String plainText, String md5Text) {
+        return encryptMD5(plainText).equals(md5Text);
+    }
+
+    /**
      * 随机生成AES秘钥
      */
     public static String generateAESKey() throws Exception {

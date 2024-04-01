@@ -13,6 +13,8 @@ public class HeaderConstant {
 
     public static final String AUTHORIZATION = "Authorization";
 
+    public static final String TOKEN = "token";
+
 
     /**
      * 租户id

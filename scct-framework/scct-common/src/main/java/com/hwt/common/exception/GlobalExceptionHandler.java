@@ -1,7 +1,6 @@
 package com.hwt.common.exception;
 
 import com.hwt.common.result.Result;
-import com.hwt.common.result.ResultCodeEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.BindingResult;
@@ -13,10 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 
 
 /**
- * author : wx
- * date : 2022-03-02 15:35
- * description : 全局异常处理
- * @author lh
+ * @Description 全局异常处理
+ * @Date 2023/8/31 14:02 星期四
+ * @Author Hu Wentao
  */
 @Slf4j
 @Component
@@ -31,8 +29,8 @@ public class GlobalExceptionHandler<T> {
     @ExceptionHandler(value = {GlobalException.class})
     public Result<T> customHandleException(HttpServletRequest request, GlobalException e) {
         String method = request.getRequestURI();
-        log.error(" method: " + method + " ====> 触发自定义异常！原因是:"+ e.getMsg());
-        return Result.fail(ResultCodeEnum.HINT_FAIL.code,e.getMsg());
+        log.error(" method: " + method + " ====> 触发自定义异常！原因是:{}"+ e.getMsg());
+        return Result.fail(e.getCode(), e.getMsg());
     }
 
 

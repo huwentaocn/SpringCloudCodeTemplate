@@ -6,10 +6,9 @@ import org.springframework.validation.FieldError;
 import java.util.List;
 
 /**
- * author : wx
- * date : 2020-03-30 17:21
- * description : 封装请求错误信息返回参数
- * @author lh
+ * @Description 封装请求错误信息返回参数
+ * @Date 2023/8/31 14:02 星期四
+ * @Author Hu Wentao
  */
 public class BindingResultResponse {
 

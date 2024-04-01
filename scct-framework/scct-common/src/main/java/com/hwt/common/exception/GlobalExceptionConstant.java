@@ -1,9 +1,9 @@
 package com.hwt.common.exception;
 
 /**
- * @author : wx
- * date : 2023-10-09 13:42
- * description : 自定义返回提示
+ * @Description 自定义返回提示
+ * @Date 2023/8/31 14:02 星期四
+ * @Author Hu Wentao
  */
 public class GlobalExceptionConstant {
 
